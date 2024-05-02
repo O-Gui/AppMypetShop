@@ -29,32 +29,41 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="80dp" />
 
-    <ImageView
-
-        android:id="@+id/img_3"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonLayout"
         android:layout_width="212dp"
         android:layout_height="45dp"
-        android:src="@drawable/img_3"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="467dp" />
+        tools:layout_editor_absoluteY="467dp" >
 
+        <ImageView
+            android:id="@+id/img_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_selector"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null"/>
 
-    <TextView
-        android:id="@+id/txtReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="REDEFINIR"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/img_3"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@id/img_3"
-        app:layout_constraintTop_toTopOf="@id/img_3" />
+        <TextView
+            android:id="@+id/txtReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="REDEFINIR"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="11dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <ImageView
 
